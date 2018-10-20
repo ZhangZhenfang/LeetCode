@@ -1,5 +1,11 @@
 package _19_Remove_Nth_Node_From_End_Of_List;
 
+
+/**
+ * @author ZhangZhenfang
+ * @date 2018/10/20 15:30
+ *
+ */
 public class Solution {
 
     public static void main(String[] args){

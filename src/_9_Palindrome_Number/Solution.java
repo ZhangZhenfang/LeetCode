@@ -1,5 +1,9 @@
 package _9_Palindrome_Number;
 
+/**
+ * @author ZhangZhenfang
+ * @date 2018/09/20
+ */
 class Solution {
     public boolean isPalindrome(int x) {
         if(x < 0)return false;
