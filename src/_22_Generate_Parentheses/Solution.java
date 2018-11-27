@@ -1,7 +1,9 @@
 package _22_Generate_Parentheses;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * @author ZhangZhenfang
@@ -25,7 +27,7 @@ public class Solution {
         return res;
     }
 
-    public static void generate(String str, int left, int right, List<String> res) {
+    public void generate(String str, int left, int right, List<String> res) {
         if (left > right) {
             return ;
         }
