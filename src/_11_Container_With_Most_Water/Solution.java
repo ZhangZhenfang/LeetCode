@@ -20,16 +20,15 @@ public class Solution {
 
         while(start < end){
             int min;
-            if(height[start] > height[end]){
+            if (height[start] > height[end]) {
                 min = height[end];
                 end--;
-            }
-            else{
+            } else {
                 min = height[start];
                 start++;
             }
             int water = min * (end - start + 1);
-            if(water > max){
+            if (water > max) {
                 max = water;
             }
         }
