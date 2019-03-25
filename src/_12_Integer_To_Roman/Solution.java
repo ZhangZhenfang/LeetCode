@@ -11,13 +11,13 @@ import java.util.Map;
  */
 public class Solution {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println(new Solution().intToRoman(13));
 
     }
 
-    public String intToRoman(int num){
-        int[] array = new int[]{1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+    public String intToRoman(int num) {
+        int[] array = new int[]{ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 };
         Map<Integer, String> map = new HashMap<Integer, String>();
         map.put(1, "I");
         map.put(4, "IV");
@@ -34,8 +34,8 @@ public class Solution {
         map.put(1000, "M");
 
         String res = "";
-        for(int i = 0; i < array.length; i++){
-            while(num - array[i] >= 0){
+        for (int i = 0; i < array.length; i++) {
+            while (num - array[i] >= 0) {
                 num -= array[i];
                 res += map.get(array[i]);
             }

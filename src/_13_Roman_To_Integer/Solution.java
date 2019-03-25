@@ -11,12 +11,12 @@ import java.util.Map;
  */
 public class Solution {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println(new Solution().romanToInt("IV"));
 
     }
 
-    public int romanToInt(String s){
+    public int romanToInt(String s) {
         Map<Character, Integer> map = new HashMap<Character, Integer>();
         map.put('I', 1);
         map.put('V', 5);
@@ -27,11 +27,10 @@ public class Solution {
         map.put('M', 1000);
         int res = 1;
         s = s + "I";
-        for(int i = s.length() - 2; i >= 0; i--){
-            if(map.get(s.charAt(i)) >= map.get(s.charAt(i + 1))){
+        for (int i = s.length() - 2; i >= 0; i--) {
+            if (map.get(s.charAt(i)) >= map.get(s.charAt(i + 1))) {
                 res += map.get(s.charAt(i));
-            }
-            else{
+            } else {
                 res -= map.get(s.charAt(i));
             }
         }
